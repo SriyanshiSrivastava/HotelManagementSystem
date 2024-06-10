@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            color: #333;
+        }
+
+        .room {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .room-image {
+            width: 48%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .room-details {
+            flex: 1;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: rosybrown;
+        }
+
+        .button {
+            display: block;
+            width: 200px;
+            padding: 10px 20px;
+            margin: 0 auto;
+            background-color: rosybrown;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #d36a6a;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Explore Our Rooms</h1>
+
+    <div class="room">
+        <img src="standardsingle.jpg" alt="Single Room" class="room-image">
+        <div class="room-details">
+            <h2>Standard Single Room</h2>
+            <p>The single room is perfect for solo travelers or couples on a budget. It features a comfortable single bed, a private bathroom, and all the necessary amenities for a pleasant stay.</p>
+            <p class="price">3000 per night</p>
+            <a href="booking.html" class="button">Book Now</a>
+        </div>
+    </div>
+
+    <div class="room">
+        <img src="twosingle.jpg" alt="Double Room" class="room-image">
+        <div class="room-details">
+            <h2>Two Single Bed</h2>
+            <p>The double room is spacious and ideal for couples. It comes with a double bed, a private bathroom, and additional amenities to ensure a comfortable stay.</p>
+            <p class="price">$150 per night</p>
+            <a href="booking.html" class="button">Book Now</a>
+        </div>
+    </div>
+
+    <div class="room">
+        <img src=".jpg" alt="Deluxe Room" class="room-image">
+        <div class="room-details">
+            <h2>Single Room with a kitchenette</h2>
+            <p>Experience luxury in our deluxe room. It features premium furnishings, a king-size bed, a spacious bathroom, and exclusive amenities for a truly indulgent stay.</p>
+            <p class="price">$250 per night</p>
+            <a href="booking.html" class="button">Book Now</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

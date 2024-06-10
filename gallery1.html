@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Sunset Paradise Hotel</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            text-align: center;
+        }
+        
+        header {
+            background-color: rosybrown;
+            color: #ffffff;
+            padding: 50px 0;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+        }
+        
+        .gallery-section {
+            margin-bottom: 50px;
+        }
+        
+        .gallery-section h2 {
+            margin-bottom: 20px;
+        }
+        
+        .gallery-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .gallery-image {
+            margin: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gallery-image img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-image img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gallery</h1>
+        <h4>"Embark on a Visual Journey: Explore Our Stunning Views, Elegant Rooms, and Invigorating Fitness & Recreation Facilities!"</h4>
+    </header>
+
+    <div class="gallery-section">
+        <h2>View</h2>
+        <div class="gallery-images">
+            <div class="gallery-image">
+                <img src="view1.jpg" alt="View 1">
+            </div>
+            <div class="gallery-image">
+                <img src="view2.jpg" alt="View 2">
+            </div>
+            <div class="gallery-image">
+                <img src="view4.jpg" alt="View 3">
+            </div>
+            <!-- Add more images here -->
+        </div>
+    </div>
+
+    <div class="gallery-section">
+        <h2>Rooms</h2>
+        <div class="gallery-images">
+            <div class="gallery-image">
+                <img src="room2.jpg" alt="Room 2">
+            </div>
+            <div class="gallery-image">
+                <img src="room3.jpg" alt="Room 3">
+            </div>
+             <div class="gallery-image">
+                <img src="room4.jpg" alt="Room 3">
+            </div>
+            <!-- Add more images here -->
+        </div>
+    </div>
+
+    <div class="gallery-section">
+        <h2>Fitness & Recreation</h2>
+        <div class="gallery-images">
+            <div class="gallery-image">
+                <img src="fitness1.jpg" alt="Fitness 1">
+            </div>
+            <div class="gallery-image">
+                <img src="fitness12.jpg" alt="Fitness 2">
+            </div>
+     
+            <!-- Add more images here -->
+        </div>
+    </div>
+
+</body>
+</html>
+

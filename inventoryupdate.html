@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Inventory Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('kitchen.jpg');
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            max-width: 400px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #333333;
+        }
+        
+        form {
+            margin-top: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333333;
+        }
+        
+        input[type="text"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        button {
+            background-color: #4caf50;
+            color: #ffffff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            margin-right: 10px;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        button[type="reset"] {
+            background-color: #f44336;
+            margin-right: 0;
+        }
+        
+        button[type="reset"]:hover {
+            background-color: #d32f2f;
+        }
+        
+        .error {
+            color: #ff0000;
+            font-size: 14px;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            var quantity = document.getElementById("quantity").value;
+            var errorDiv = document.getElementById("error-message");
+
+            if (quantity === "" || quantity === "0") {
+                errorDiv.innerHTML = "Quantity must be greater than 0";
+                return false;
+            } else {
+                errorDiv.innerHTML = "";
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Hotel Inventory Management</h2>
+        
+        <form action="inventory" method="POST" onsubmit="return validateForm()">
+            <label for="itemname">Item Name:</label>
+            <input type="text" id="itemname" name="itemname" required>
+            
+            <label for="quantity">Quantity:</label>
+            <input type="text" id="quantity" name="quantity" required>
+            <div class="error" id="error-message"></div>
+            
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="">Select Category</option>
+                <option value="Bed Linens">Bed Linens</option>
+                <option value="Toiletries">Toiletries</option>
+                <option value="Cleaning Supplies">Cleaning Supplies</option>
+                <option value="Kitchen Utensils">Kitchen Utensils</option>
+                <option value="Room Decor">Room Decor</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Furniture">Furniture</option>
+                <option value="Stationery">Stationery</option>
+            </select>
+            <br>
+            
+            <button type="submit">Add Item</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>

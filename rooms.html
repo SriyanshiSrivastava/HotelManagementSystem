@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms & Services - Sunset Paradise Hotel</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+        
+        header {
+            background-image: url('cover.jpg');
+            background-size: cover;
+            color: #ffffff;
+            text-align: center;
+            padding: 100px 0;
+        }
+        
+        .book-now-btn {
+            background-color: rosybrown;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            position: relative;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .book-now-btn:hover {
+            background-color: #d36a6a;
+        }
+        
+        .room-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        
+        .room-section h2 {
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .room {
+            display: inline-block;
+            margin: 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .room img {
+            width: 500px; /* Increased image size */
+            height: 300px; /* Increased image size */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow */
+            transition: transform 0.3s ease;
+        }
+        
+        .room img:hover {
+            transform: scale(1.1); /* Enlarge image on hover */
+        }
+         .room p {
+            font-size: 20px; /* Increased font size for room name */
+            margin-top: 10px; /* Added spacing between image and name */
+            color: rosybrown; /* Room price color */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Sunset Paradise Hotel</h1>
+    </header>
+
+    <div class="room-section">
+        <h2>Explore Our Rooms</h2>
+        <div class="room" onclick="window.location.href='singleroom.html'">
+            <img src="Single-bed-room.jpg" alt="Single Room">
+            <p style="color:black"><b>Single Room</b></p>
+             <p>Price:Rs.3,999 /-</p>
+        </div>
+        <div class="room" onclick="window.location.href='doubleroom.html'">
+            <img src="double-bed.jpg" alt="Double Room">
+            <p style="color:black"><b>Double Room</b></p>
+            <p>Price:Rs.6,999 /-</p>
+        </div>
+        <div class="room" onclick="window.location.href='deluxe.html'">
+            <img src="deluxe-room.jpg" alt="Deluxe Room">
+            <p style="color:black"><b>Suite Room</b></p>
+            <p>Price:Rs.12,999 /-</p>
+
+        </div>
+    </div>
+    <button class="book-now-btn" onclick="window.location.href='searchrooms.html'">Check availability</button>
+    <!-- Additional sections for other services -->
+
+</body>
+</html>
